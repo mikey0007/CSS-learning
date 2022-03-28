@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        PSEUDO SELECTORS
+    </title>
+    <style type="text/css">
+   .background-lightgreen{
+       background-color:yellowgreen ;
+       padding: 10px;
+       text-align: center;
+
+   }
+   .background-lightgreen:hover{
+       background-color: yellow;
+       color:red;
+   }
+   .background-anchor{
+   
+    text-align: center;
+   }
+  .background-anchor a:active{
+      background-color: blue;
+      color: white;
+
+  }
+  .background-anchor a:visited{
+     
+     color: yellow;
+
+ }
+
+ #visited{
+    color:yellow;
+}
+
+p:lang(fr){
+    color: blueviolet;
+}
+input:focus{
+    border: 5px solid;
+}
+
+h1:nth-child(3n+1){
+    color:red;
+    background-color: yellow;
+    font-size: 30px;
+}
+h1:first-child{
+    color: blue;
+}
+</style>
+</head>
+<BODY>
+    <div class="background-lightgreen">
+    <p>This is a div tag.</p>
+</div>
+<div class="background-anchor">
+    <a href="https://www.facebook.com/" target="_blank">This is a fb page link.</a>
+
+</div>
+
+<a id="visited"  href="https://www.instagram.com/?hl=en" target="_blank">This is a link of instagram.</a>
+
+<p>this p tag is without lang attribute</p>
+<p lang="fr" >This P tag is using lang attributes.</p>
+
+<input type="text" name="firstname" placeholder="first name">
+
+<h1>THis is h1 tag.</h1>
+<h1>THis is h1 tag.</h1>
+<h1>THis is h1 tag.</h1>
+<h1>THis is h1 tag.</h1>
+<h1>THis is h1 tag.</h1>
+
+</BODY>
