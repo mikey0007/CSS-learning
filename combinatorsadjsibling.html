@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        combinators adjacent sibling
+    </title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        h1 + p {
+            color:blue;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        This is an example of adjacent sibling selector(~).
+    </h1>
+    <p>Selects only very first element(+). of h1</p>
+    <p>This is the p tag which is going to affect general sibbling select(+).</p>
+    <div>This is a div tag.
+        <p>This is a p tag which will not affect general sibling select(+).</p>
+        This is div tag.
+    </div>
+    <p>This is the p tag which is going to affect general sibbling select(+).</p>
+    <p>This is the p tag which is going to affect general sibbling select(+).</p>
+</body>
